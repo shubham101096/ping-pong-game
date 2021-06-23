@@ -35,8 +35,8 @@ screen.onkey(bat_b.head_down, "Down")
 while game_is_on:
     screen.update()
     time.sleep(0.1)
-    bat_a.move()
-    bat_b.move()
+    # bat_a.move()
+    # bat_b.move()
     ball.forward(20)
 
     if ball.ycor() > 280 or ball.ycor() < -280:
@@ -54,8 +54,6 @@ while game_is_on:
     elif ball.xcor() < -350:
         score_b.update()
         ball.restart()
-
-
 
 
 screen.exitonclick()
